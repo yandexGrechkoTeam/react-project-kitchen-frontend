@@ -71,3 +71,5 @@
 body {
   font-family: var(--main-font);
 }
+
+@import './ui/typography.css';

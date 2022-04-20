@@ -1,0 +1,39 @@
+.text {
+  padding: 0;
+  margin: 0;
+}
+
+.text_link {
+  text-decoration: underline;
+}
+
+.text_type_main-large {
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+}
+.text_type_main-medium {
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+}
+.text_type_headline {
+  font-family: var(--second-font);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.text_type_text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text_type_caption {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
