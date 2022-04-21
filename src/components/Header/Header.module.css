@@ -1,0 +1,7 @@
+header {
+  background-color: var(--bg-secondary);
+}
+
+.headerLogo {
+  font-size: 35px;
+}

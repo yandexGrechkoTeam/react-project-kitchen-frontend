@@ -66,6 +66,10 @@
   --main-font: 'JetBrains Mono', sans-serif;
   --second-font: 'Exo', sans-serif;
   --accent-color: #4c4cff;
+  --bg-primary: #131316;
+  --bg-secondary: #1c1c21;
+  --text-primary: #f2f2f3;
+  --text-secondary: #8585ad;
 }
 
 body {
@@ -73,3 +77,4 @@ body {
 }
 
 @import './ui/typography.css';
+@import './ui/atom.css';
