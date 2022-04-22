@@ -1,0 +1,25 @@
+@import './ui/fonts.scss';
+@import './ui/typography.scss';
+@import './ui/box.scss';
+@import './ui/atom.scss';
+:root {
+  --offset-base-size: 4px;
+  --main-font: 'JetBrains Mono', sans-serif;
+  --second-font: 'Exo', sans-serif;
+  --accent-color: #4c4cff;
+  --bg-primary: #131316;
+  --bg-secondary: #1c1c21;
+  --text-primary: #f2f2f3;
+  --text-secondary: #8585ad;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+a {
+  color: var(--text-secondary);
+}
+a:hover {
+  color: var(--text-primary);
+}

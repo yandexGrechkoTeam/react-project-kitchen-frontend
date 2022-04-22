@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
-import LoggedOutView from '../LoggedOutView/LoggedOutView';
-import LoggedInView from '../LoggedInView/LoggedInView';
-
-import styles from './Header.module.css';
+import LoggedOutView from '../Logged/LoggedOutView/LoggedOutView';
+import LoggedInView from '../Logged/LoggedInView/LoggedInView';
+import styles from './Header.module.scss';
 
 function ComponentLogged({ currentUser }) {
   if (currentUser) {
@@ -18,12 +17,18 @@ const Header = ({ appName, currentUser }) => {
     <header>
       <div className="container">
         <div className="row justify-content-between align-items-center">
-          <div className={styles.headerLogo}>
-            <Link to="/" className="text-shadow">
+          <div className="headerLogo">
+            <Link
+              to="/"
+              className={classNames(
+                styles.logo,
+                'text_type_headline text_shadow'
+              )}
+            >
               {appName}
             </Link>
           </div>
-          <nav className="navbar navbar-light">
+          <nav className={styles.navbar}>
             <ComponentLogged currentUser={currentUser} />
           </nav>
         </div>
